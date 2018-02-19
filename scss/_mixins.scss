@@ -1,0 +1,33 @@
+@for $i from 0 through $grid-columns {
+    .micro-#{$i} {
+        flex-basis: percentage($i / $grid-columns);
+        max-width: percentage($i / $grid-columns);
+    }
+}
+
+@media screen and (min-width: $breakpoint-small) {
+    @for $i from 0 through $grid-columns {
+        .small-#{$i} {
+            flex-basis: percentage($i / $grid-columns);
+            max-width: percentage($i / $grid-columns);
+        }
+    }
+}
+
+@media screen and (min-width: $breakpoint-medium) {
+    @for $i from 0 through $grid-columns {
+        .medium-#{$i} {
+            flex-basis: percentage($i / $grid-columns);
+            max-width: percentage($i / $grid-columns);
+        }
+    }
+}
+
+@media screen and (min-width: $breakpoint-large) {
+    @for $i from 0 through $grid-columns {
+        .large-#{$i} {
+            flex-basis: percentage($i / $grid-columns);
+            max-width: percentage($i / $grid-columns);
+        }
+    }
+}
